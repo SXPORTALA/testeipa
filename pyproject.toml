@@ -14,7 +14,7 @@ author_email = "devcoffebrasil@gmail.com"
 [tool.briefcase.app.exemplo-ipa]
 formal_name = "Teste IPA"
 description = "App iOS em Python com BeeWare/Toga."
-sources = ["src/exemplo_ipa"]
+sources = ["src/teste_ipa"]
 requires = [
   "toga-iOS",         # backend iOS do Toga
 ]
