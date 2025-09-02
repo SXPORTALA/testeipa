@@ -1,0 +1,29 @@
+[build-system]
+requires = ["briefcase"]
+build-backend = "briefcase.build"
+
+[tool.briefcase]
+project_name = "Teste IPA"
+bundle = "com.seu.bundle"   # altere para seu domínio reverso
+version = "0.0.1"
+url = "https://example.com"
+license = { file = "LICENSE" }
+author = "swcbm"
+author_email = "devcoffebrasil@gmail.com"
+
+[tool.briefcase.app.exemplo-ipa]
+formal_name = "Teste IPA"
+description = "App iOS em Python com BeeWare/Toga."
+sources = ["src/exemplo_ipa"]
+requires = [
+  "toga-iOS",         # backend iOS do Toga
+]
+# Opcional: fixe versões compatíveis caso necessário
+# requires = ["toga-iOS==0.4.*"]
+
+[tool.briefcase.app.exemplo-ipa.macOS]
+requires = []  # caso queira compilar também para macOS
+
+[tool.briefcase.app.exemplo-ipa.iOS]
+requires = []
+icon = "src/exemplo_ipa/resources"  # coloque ícones aqui se quiser
